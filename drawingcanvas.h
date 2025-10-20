@@ -1,26 +1,25 @@
 #ifndef DRAWINGCANVAS_H
 #define DRAWINGCANVAS_H
 
-#include <QWidget>
-#include <QVector>
-#include <QPoint>
-#include <QPainter>
 #include <QMouseEvent>
-#include <iostream>
-#include <iomanip>
+#include <QPainter>
 #include <QPixmap>
+#include <QPoint>
+#include <QVector>
+#include <QWidget>
 #include "CustomMatrix.h"
+#include <iomanip>
+#include <iostream>
 
 using namespace std;
 using Array3x3 = std::array<std::array<bool, 3>, 3>;
-
 
 class DrawingCanvas : public QWidget
 {
     Q_OBJECT
 private:
-    const int WINDOW_WIDTH=600;
-    const int WINDOW_HEIGHT=400;
+    const int WINDOW_WIDTH = 600;
+    const int WINDOW_HEIGHT = 400;
 
 public:
     explicit DrawingCanvas(QWidget *parent = nullptr);

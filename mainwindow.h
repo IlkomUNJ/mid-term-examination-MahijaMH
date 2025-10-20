@@ -21,5 +21,4 @@ private:
     QPushButton *m_clearButton, *m_drawButton, *m_detectButton;
 };
 
-
 #endif // MAINWINDOW_H

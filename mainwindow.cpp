@@ -1,8 +1,10 @@
 #include "mainwindow.h"
-#include <QVBoxLayout>
 #include <QHBoxLayout>
+#include <QVBoxLayout>
 
-MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
+MainWindow::MainWindow(QWidget *parent)
+    : QMainWindow(parent)
+{
     // Create a central widget to hold the layout
     QWidget *centralWidget = new QWidget(this);
     QVBoxLayout *mainLayout = new QVBoxLayout(centralWidget);
@@ -27,7 +29,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     connect(m_drawButton, &QPushButton::clicked, m_canvas, &DrawingCanvas::paintLines);
     connect(m_detectButton, &QPushButton::clicked, m_canvas, &DrawingCanvas::segmentDetection);
 
-
     // Set the layout for the central widget and set it as the main window's central widget
     centralWidget->setLayout(mainLayout);
     setCentralWidget(centralWidget);
@@ -36,6 +37,4 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     setFixedSize(450, 450);
 }
 
-MainWindow::~MainWindow()
-{
-}
+MainWindow::~MainWindow() {}
