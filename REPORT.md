@@ -1,5 +1,9 @@
 # Report on the result of the objective
 
+# AI prompt
+gemini: https://gemini.google.com/share/f8b5c5a89bd4 
+Perplexity: error, sehingga tidak dapat di share
+
 # objective 1
 Setelah saya melakukan analisis dan experiment pada beberapa ukuran window, saya menemukan bahwa ukuran window yang bisa di bilang ideal untuk proses segment detection terhadap resolusi window canvas ini adalah 3×3, 5×5, dan 7×7.
 ketiga ukuran ini saya pilih agar proses scanning tidak melakukan scanning full pada area canvas tanpa melewati boundary dari canvas yang dapat menyebabkan crash.
